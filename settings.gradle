@@ -1,0 +1,2 @@
+include ':sample'
+rootProject.name = "PayWiser IBAN Wallet Android SDK Sample App"

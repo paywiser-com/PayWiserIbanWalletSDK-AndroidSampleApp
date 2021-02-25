@@ -44,7 +44,7 @@ class MainViewModel: ViewModel() {
             val response = PayWiserIbanWallet.loginUserSendVerificationCode(mobileNumberWithPlushSign)
             when (response.statusCode) {
                 0 -> {
-                    _userVerificationCodeTitle.postValue("Enter ${response.verificationCodeLength}-digit the confirmation code received over SMS")
+                    _userVerificationCodeTitle.postValue("Enter the ${response.verificationCodeLength}-digit confirmation code received over SMS")
                     _userMobileNumber.postValue(formattedMobileNumber)
                     _hideProgress.postValue(true)
                     _showError.postValue("")

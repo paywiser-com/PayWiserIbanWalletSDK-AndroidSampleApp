@@ -22,7 +22,7 @@ allprojects {
         maven { url "https://maven.pkg.github.com/paywiser-com/integration"
             credentials {
                 username = "PayWiser-Integration"
-                password = "3150f5394e6336673e653eb853407bb5867e5e9d"
+                password = "@CheckDocumentationForValidToken"
             }
         }
     }
